@@ -1,0 +1,94 @@
+% c'est module c'est le reste de la division
+
+== c'est pour comparé
+=== comparé strictement en incluant le type
+
+(!true) ça renvoit l'inverse de ce que c'est donc ici ça renvoit false
+
+if pour 1ere condition 
+else if 2ème condition 
+pour rajouter une condition "sinon" faut mettre juste else si tout est faux
+
+
+Dans le switch on peut mettre plusieurs conditions pour une seule application de code juste e mettant plusieurs case aligné sans break
+
+
+
+                                                    les boucles
+La boucle while c'est la boucle tant que
+
+la différence entre la boucle while et do while c'est que do while vérifie la condition a la fin (tour gratuit)
+on execute le do sans verifier la condition au début mais a la fin 
+cet a dire 
+while verifie la variable avant l'execution du code
+do while va vérifier la variable après execution du code d'ou le tour gratuit
+
+
+la boucle for (pour)
+3 partie a respecter de façon for (partie 1; partie 2;partie 3)
+partie 1 : pour la variable
+partie 2: la condition
+partie 3: ce qui se passe a la fin de ma boucle  ex: ++ ou ind++ en c sharp pour ajouter 1 dans les tableaux
+il revérifie la condition donc il répète partie 2 et partie 3 jusqu'a ce que que la condition soit fauuse
+
+                                                        fonctions
+
+la syntaxe pour déclarer c'est function name(paramètre de la fonction ,paramètre2 etc ...);
+{
+    code a executer
+    return + un calcul entre deux paramètre etc..; 
+}
+les paramètre n'ont pas besoin d'être déclaré c'est juste des noms pour se repérer
+une fonction retourne une valeur en fonction des paramètres appliqués.
+
+                                                        Scope
+
+les fonctions possède un scope local cet a dire que les variables déclaré dans la fonction sont uniquement définis dans la fonction 
+donc impossibilité de les utiliser en dehors
+ce qui est déclaré de manière général dans le programme c'est le scope gobal
+
+                                        tableaux
+
+nomdutableau.push(valeur) permet d'ajouter des valeurs dans le tableau
+nomdutableau.pop() permet d'enlever la derniere valeur du tableau
+nomdutableau.slice(indexdépart,indexFin) retourne les valeurs contenu dans les index sur une plage index de fin non inclus 
+si on mets qu'un seul argument par 2 sur un tableau de 5 il va commancer a 2 puis donner les autres jusque 4 car 5ème non inclus
+
+les tableaux marchent ausi bien avec les chaines de caracteres, les float ou encore les booléens 
+
+on peut faire des tableaux dans des tableaux
+
+pour chercher les valeurs dans des tableaux de tableaux on fait de tel sorte que 
+         Console.log(monTableaux [indTableau1][indSousTableau])
+																	Les objets
+les objets ont des propriétés et des méthodes (c'est des fonctions)
+on liste toutes les propriétés et les fonctions de l'objet 
+et on peut y acceder avec console.log(nomVAR[Nompropriété]
+
+pour parcourir les propriétés de l'objet on utilise une boucle for tel que 
+	for(var property in dog){
+        console.log[property]
+    }
+	
+on peut déclarer d'une différente façon
+
+méthode = fonction
+
+dog.aboie = function(){console.log(woaf woaf)};
+
+pour executer juste taper le nom de la fonction
+dog.aboie(); qui renvoit woaf woaf
+
+on peut choisir combien de fois executer avec une boucle while
+
+
+Pour recreer un objets on peut utiliser les fonctions constructeurs = creer un objet du même type
+c'est une sorte d'usine pour faire plusieurs objets du même type
+très pratique pour faire plusieurs objet du même type
+
+pour cibler une instance utiliser le mot "this"
+					this.name c'est la propriétés de l'objet que je souhaite creer
+					première lettre de la fonction en majuscule
+					
+					faut déclarer une variable et l'associé au type de l'objet creer au dessus avec les arguments 
+
